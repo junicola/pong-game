@@ -6,6 +6,8 @@ TagManager:
   tags:
   - RaqEsq
   - RaqDir
+  - texto1
+  - texto2
   layers:
   - Default
   - TransparentFX

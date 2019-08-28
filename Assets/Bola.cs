@@ -25,10 +25,14 @@ public class Bola : MonoBehaviour {
 	}
 	
 	private void OnTriggerEnter2D(Collider2D collision){
-		if(collision.tag.Equals("RaqEsq") || collision.tag.Equals("RaqDir")){
-			Debug.Log("TESTE");
+		if(collision.tag.Equals("RaqEsq")){
 			this.direcao.x = -this.direcao.x;
+			Pontuacao.pontos1++;
+			Debug.Log(Pontuacao.pontos1);
+		}	
+		if(collision.tag.Equals("RaqDir")){
+			this.direcao.x = -this.direcao.x;
+			Pontuacao.pontos2++;
 		}
-			
 	}
 }
